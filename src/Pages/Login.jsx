@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
     return (
-        <div className="w-full max-w-md mx-auto p-8 space-y-3 rounded-xl text-black">
+        <div className="w-full max-w-md mx-auto min-h-[calc(100vh-341px)] p-8 space-y-3 rounded-xl text-black">
             <h1 className="text-2xl font-bold text-center">Please Login</h1>
             <p className="text-sm text-center text-gray-500">Login to access your account</p>
             <form noValidate="" action="" className="space-y-6">

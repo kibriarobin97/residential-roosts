@@ -1,7 +1,7 @@
 
 const UpdateProfile = () => {
     return (
-        <div>
+        <div className="min-h-[calc(100vh-341px)]">
             <h3>update profile</h3>
         </div>
     );
