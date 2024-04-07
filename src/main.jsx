@@ -9,6 +9,7 @@ import Root from './Root/Root';
 import Home from './Pages/Home';
 import UpdateProfile from './Pages/UpdateProfile';
 import UserProfile from './Pages/UserProfile';
+import Login from './Pages/Login';
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: '/userProfile',
         element: <UserProfile></UserProfile>
+      },
+      {
+        path: '/login',
+        element: <Login></Login>
       }
     ]
   },
