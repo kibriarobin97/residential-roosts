@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const EstateCard = ({ estate }) => {
 
     const { id, estate_title, segment_name, image, price, status, area } = estate;
 
     return (
-        <div className="flex flex-col shadow-lg max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md text-black">
+        <div className="flex flex-col flex-grow shadow-lg max-w-lg p-6 space-y-6 overflow-hidden rounded-lg text-black">
             <div>
                 <img src={image} alt="" className="object-cover w-full rounded-md mb-4 h-60 sm:h-96 bg-gray-500" />
                 <p className="text-[#8C8C8C]">{segment_name}</p>
@@ -32,5 +33,9 @@ const EstateCard = ({ estate }) => {
         </div>
     );
 };
+
+EstateCard.propTypes = {
+    estate: PropTypes.object
+}
 
 export default EstateCard;

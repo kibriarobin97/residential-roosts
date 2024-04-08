@@ -5,7 +5,6 @@ import { useLoaderData } from "react-router-dom";
 const Home = () => {
 
     const resident = useLoaderData()
-    console.log(resident)
 
     return (
         <div className="min-h-[calc(100vh-341px)]">
