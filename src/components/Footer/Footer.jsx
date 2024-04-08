@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -6,9 +7,9 @@ const Footer = () => {
             <footer className="px-4 divide-y max-w-7xl mx-auto text-black">
                 <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
                     <div className="lg:w-1/3">
-                        <a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
+                        <Link to='/' className="flex justify-center space-x-3 lg:justify-start">
                             <span className="self-center text-2xl font-semibold">Residential-Roosts</span>
-                        </a>
+                        </Link>
                     </div>
                     <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
                         <div className="space-y-3">
