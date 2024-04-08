@@ -28,6 +28,7 @@ const Slider = () => {
                 navigation={true}
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
+                
             >
                 <SwiperSlide className='relative'>
                     <img className='object-cover max-h-96 w-full' src="https://i.ibb.co/jD9Yt9n/single-family.jpg" alt="" />

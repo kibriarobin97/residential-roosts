@@ -1,0 +1,191 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/3r1VKfx/single-family1.jpg",
+        "estate_title": "Modern Family Home with Stunning Views",
+        "segment_name": "Single Family Home",
+        "description": "Welcome to this contemporary masterpiece offering breathtaking views of the surrounding landscape. This spacious single-family home features 4 bedrooms, 3 bathrooms, and an open-concept layout designed for modern living. The gourmet kitchen is equipped with high-end appliances and a large island, perfect for entertaining guests. Retreat to the luxurious master suite with a spa-like ensuite bath and private balcony overlooking the picturesque scenery. Located in a sought-after neighborhood, this home provides the perfect blend of luxury and tranquility.",
+        "price": "$850,000",
+        "status": "Sale",
+        "area": "3,000 sq ft",
+        "location": "789 Serenity Lane, Tranquil Valley, USA",
+        "facilities": [
+            "Spacious Yard",
+            "Two-Car Garage",
+            "Deck"
+        ],
+        "features": [
+            "Open-Concept Design",
+            "Floor-to-Ceiling Windows",
+            "Master Suite with Balcony"
+        ]
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/r60Qw3p/single-family2.jpg",
+        "estate_title": "Cozy Family Home in the Heart of Suburbia",
+        "segment_name": "Single Family Home",
+        "description": "This charming single-family home is nestled in a family-friendly neighborhood, offering comfort and convenience for everyday living. Featuring 3 bedrooms, 2.5 bathrooms, and a functional floor plan, this home is perfect for families of all sizes. The inviting living room welcomes you with a cozy fireplace, while the well-appointed kitchen boasts plenty of counter space and storage. Enjoy outdoor gatherings in the fenced backyard with a patio and garden area. Located close to schools, parks, and shopping, this home offers the ideal suburban lifestyle.",
+        "price": "$400,000",
+        "status": "Sale",
+        "area": "2,200 sq ft",
+        "location": "456 Oak Street, Suburbia, USA",
+        "facilities": [
+            "Fenced Yard",
+            "Fireplace",
+            "Patio"
+        ],
+        "features": [
+            "Functional Layout",
+            "Ample Storage",
+            "Close to Amenities"
+        ]
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/1JBFZ52/apartment-city-view.jpg",
+        "estate_title": "Luxury Downtown Apartment with Panoramic City Views",
+        "segment_name": "Apartments",
+        "description": "Indulge in luxury living with this stunning downtown apartment boasting breathtaking panoramic views of the city skyline. This spacious apartment features 2 bedrooms, 2 bathrooms, and a contemporary open-concept layout flooded with natural light. The sleek kitchen is equipped with high-end appliances and a breakfast bar, perfect for both casual meals and entertaining. Relax and unwind in the elegant master suite with a walk-in closet and ensuite bath. Located in a prestigious building with amenities including a fitness center, rooftop terrace, and concierge service, this apartment offers the ultimate urban lifestyle.",
+        "price": "$750,000",
+        "status": "Sale",
+        "area": "1,500 sq ft",
+        "location": "123 Main Street, Downtown Metropolis, USA",
+        "facilities": [
+            "Fitness Center",
+            "Rooftop Terrace",
+            "Concierge Service"
+        ],
+        "features": [
+            "Floor-to-Ceiling Windows",
+            "Hardwood Floors",
+            "Modern Design"
+        ]
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/Bw2Vst1/apartment-neghiborhood.jpg",
+        "estate_title": "Contemporary Apartment in Trendy Neighborhood",
+        "segment_name": "Apartments",
+        "description": "Discover urban living at its finest with this contemporary apartment located in a vibrant and trendy neighborhood. Boasting 1 bedroom, 1 bathroom, and an efficient layout, this apartment is perfect for young professionals or couples seeking convenience and style. The modern kitchen features stainless steel appliances and quartz countertops, while the spacious living area offers plenty of room to relax and entertain. Take advantage of the building's amenities, including a pool, fitness center, and resident lounge. With easy access to shops, restaurants, and public transportation, this apartment offers the perfect blend of comfort and convenience.",
+        "price": "$80,000",
+        "status": "Rent",
+        "area": "800 sq ft",
+        "location": "456 Elm Street, Hipster Heights, USA",
+        "facilities": [
+            "Pool",
+            "Fitness Center",
+            "Resident Lounge"
+        ],
+        "features": [
+            "Stainless Steel Appliances",
+            "Quartz Countertops",
+            "City Views"
+        ]
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/84wK4JL/townhouses1.jpg",
+        "estate_title": "Modern Townhouse Living in Serene Community",
+        "segment_name": "Townhouses",
+        "description": "Experience contemporary townhouse living in this stylish property nestled within a serene and family-friendly community. This spacious townhouse features 3 bedrooms, 2.5 bathrooms, and a versatile floor plan designed for modern lifestyles. The gourmet kitchen boasts sleek countertops, stainless steel appliances, and ample cabinet space, perfect for culinary enthusiasts. Relax and unwind in the inviting living room or retreat to the private patio for outdoor entertaining. Located in a desirable neighborhood with easy access to parks, schools, and shopping, this townhouse offers the perfect blend of comfort and convenience.",
+        "price": "$600,000",
+        "status": "Sale",
+        "area": "1,800 sq ft",
+        "location": "123 Oak Street, Tranquil Terrace, USA",
+        "facilities": [
+            "Private Patio",
+            "Community Park",
+            "Two-Car Garage"
+        ],
+        "features": [
+            "Open-Concept Design",
+            "Master Suite with Walk-in Closet",
+            "Modern Finishes"
+        ]
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/JCgLnK9/townhousess2.jpg",
+        "estate_title": "Charming Townhouse with Spectacular Mountain Views",
+        "segment_name": "Townhouses",
+        "description": "Discover the beauty of townhouse living with this charming property boasting spectacular mountain views. Featuring 2 bedrooms, 2 bathrooms, and a cozy atmosphere, this townhouse is perfect for those seeking a tranquil retreat. The updated kitchen offers granite countertops, stainless steel appliances, and a breakfast bar, ideal for casual dining. Relax in the spacious living room with a fireplace or step outside to the private balcony to soak in the breathtaking scenery. Located in a desirable neighborhood close to hiking trails, shops, and restaurants, this townhouse offers the perfect combination of comfort and outdoor adventure.",
+        "price": "$150,000",
+        "status": "Rent",
+        "area": "1,500 sq ft",
+        "location": "456 Mountain View Drive, Scenic Peaks, USA",
+        "facilities": [
+            "Private Balcony",
+            "Fireplace",
+            "Community Pool"
+        ],
+        "features": [
+            "Granite Countertops",
+            "Mountain Views",
+            "Updated Kitchen"
+        ]
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co/g4rQGZy/vacation-rentals-beatch.jpg",
+        "estate_title": "Seaside Villa with Private Beach Access",
+        "segment_name": "Vacation Rentals",
+        "description": "Escape to paradise with this luxurious seaside villa offering breathtaking ocean views and exclusive access to a private beach. This spacious rental features 4 bedrooms, 4.5 bathrooms, and an open-concept layout designed for comfort and relaxation. The gourmet kitchen is equipped with high-end appliances and a large island, perfect for preparing meals with family and friends. Unwind in the expansive living room with floor-to-ceiling windows showcasing panoramic vistas of the turquoise waters. Step outside to the outdoor terrace with a pool, hot tub, and al fresco dining area, ideal for enjoying the warm tropical breeze. Located in a prestigious resort community with amenities including a spa, tennis courts, and concierge service, this vacation rental offers the ultimate luxury getaway.",
+        "price": "$2,500 per night",
+        "status": "Rent",
+        "area": "3,500 sq ft",
+        "location": "123 Oceanfront Drive, Paradise Cove, USA",
+        "facilities": [
+            "Private Pool",
+            "Hot Tub",
+            "Private Beach Access"
+        ],
+        "features": [
+            "Oceanfront Views",
+            "Spacious Terrace",
+            "High-End Furnishings"
+        ]
+    },
+    {
+        "id": 8,
+        "image": "https://i.ibb.co/cLX7pgx/vacation-rentals-maunten.jpg",
+        "estate_title": "Mountain Retreat with Scenic Views",
+        "segment_name": "Vacation Rentals",
+        "description": "Experience the beauty of nature with this charming mountain retreat nestled amidst towering pine trees and breathtaking scenery. This cozy rental features 3 bedrooms, 2 bathrooms, and a rustic yet comfortable atmosphere perfect for unwinding. The well-equipped kitchen allows for easy meal preparation, while the inviting living room offers a cozy fireplace and panoramic views of the surrounding mountains. Step outside to the spacious deck to enjoy morning coffee or stargazing in the evening. Located near hiking trails, ski slopes, and charming mountain towns, this vacation rental is the perfect destination for outdoor enthusiasts and nature lovers alike.",
+        "price": "$300 per night",
+        "status": "Rent",
+        "area": "2,000 sq ft",
+        "location": "456 Mountain Retreat Lane, Serenity Peaks, USA",
+        "facilities": [
+            "Deck",
+            "Fireplace",
+            "Scenic Views"
+        ],
+        "features": [
+            "Rustic Charm",
+            "Outdoor Recreation Nearby",
+            "Peaceful Atmosphere"
+        ]
+    },
+    {
+        "id": 9,
+        "image": "https://i.ibb.co/Fm70D0s/student-housing.jpg",
+        "estate_title": "Cozy Student House with Spacious Bedrooms",
+        "segment_name": "Student Housing",
+        "description": "Experience comfortable student living in this cozy house located in a quiet residential neighborhood near the university. This student house features 4 bedrooms, 2 bathrooms, and a shared living area perfect for hanging out with roommates. The bedrooms are spacious and furnished with desks, dressers, and comfortable beds, providing a conducive environment for studying and relaxation. Enjoy amenities such as off-street parking, a backyard patio, and high-speed internet. With grocery stores, cafes, and campus facilities within walking distance, this student house offers the perfect balance of convenience and affordability.",
+        "price": "$500 per month",
+        "status": "Rent",
+        "area": "800 sq ft",
+        "location": "456 Maple Street, University District, USA",
+        "facilities": [
+            "Off-Street Parking",
+            "Backyard Patio",
+            "High-Speed Internet"
+        ],
+        "features": [
+            "Spacious Bedrooms",
+            "Furnished",
+            "Walking Distance to Campus"
+        ]
+    }
+]
