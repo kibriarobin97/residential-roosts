@@ -4,7 +4,7 @@ import { useContext } from "react";
 
 const Register = () => {
 
-    const { createUser } = useContext(AuthContext)
+    const { createUser, updateUserProfile } = useContext(AuthContext)
 
     const navigate = useNavigate()
 
@@ -18,9 +18,12 @@ const Register = () => {
 
         //create user
         createUser(email, password)
-        .then(result => {
-            console.log(result.user)
-            navigate('/')
+        .then(() => {
+            updateUserProfile(name, photo)
+            .then(() => {
+                navigate('/')
+            })
+            
         })
         .catch(error => {
             console.error(error)
