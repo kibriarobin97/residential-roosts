@@ -7,12 +7,13 @@ const Navbar = () => {
 
     const { user, logOut } = useContext(AuthContext)
 
+
     const handleLogOut = () => {
         logOut()
-        .then(alert('Successfully Logout'))
-        .catch(error => {
-            alert(error.message)
-        })
+            .then(alert('Successfully Logout'))
+            .catch(error => {
+                alert(error.message)
+            })
     }
 
     const navLinks = <>
@@ -45,11 +46,13 @@ const Navbar = () => {
                         <div className="dropdown dropdown-end">
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
-                                    <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                    <img alt="User Photo" src={user.photoURL} />
                                 </div>
                             </div>
                             <ul tabIndex={0} className="mt-3 z-10 p-2 shadow menu menu-sm dropdown-content bg-base-300 rounded-box w-32 mx-auto">
-                                <li className="hover:font-bold"><a>User</a></li>
+                                <li className="hover:font-bold"><Link to='/userProfile'>
+                                    {user?.displayName ? user.displayName : 'User'}
+                                </Link></li>
                                 <li className="hover:font-bold"><button onClick={handleLogOut}>Logout</button></li>
                             </ul>
                         </div>
