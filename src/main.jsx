@@ -12,12 +12,16 @@ import UserProfile from './Pages/UserProfile';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
 import EstateDetails from './Pages/EstateDetails';
+import ErrorPage from './Pages/ErrorPage';
+import AuthProvider from './AuthProvider/AuthProvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
@@ -26,7 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/details/:id',
-        element: <EstateDetails></EstateDetails>,
+        element: <PrivateRoute><EstateDetails></EstateDetails></PrivateRoute>,
         loader: () => fetch('/residential.json')
       },
       {
@@ -51,6 +55,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )

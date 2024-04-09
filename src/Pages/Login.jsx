@@ -1,18 +1,46 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../AuthProvider/AuthProvider";
+
 
 const Login = () => {
+
+    const {loginUser} = useContext(AuthContext)
+
+    const location = useLocation()
+    const navigate = useNavigate()
+
+    const handleLogin = e => {
+        e.preventDefault();
+        const form = new FormData(e.currentTarget)
+        const email = form.get('email')
+        const password = form.get('password')
+
+        //login user
+        loginUser(email, password)
+        .then(() => {
+            alert('Successfully Login')
+
+            //navigate use after login
+            navigate(location?.state ? location.state : '/')
+        })
+        .catch(error => {
+            alert(error.message)
+        })
+    }
+
     return (
         <div className="w-full max-w-md mx-auto min-h-[calc(100vh-341px)] p-8 space-y-3 rounded-xl text-black">
             <h1 className="text-2xl font-bold text-center">Please Login</h1>
             <p className="text-sm text-center text-gray-500">Login to access your account</p>
-            <form noValidate="" action="" className="space-y-6">
+            <form onSubmit={handleLogin} className="space-y-6">
                 <div className="space-y-1 text-sm">
                     <label htmlFor="email" className="block text-black">Email</label>
-                    <input type="email" name="email" id="email" required placeholder="Your Email" className="w-full px-4 py-3 rounded-md border-gray-700  text-gray-100 focus:border-violet-400" />
+                    <input type="email" name="email" id="email" required placeholder="Your Email" className="w-full px-4 py-3 rounded-md border-gray-700  text-black focus:border-violet-400" />
                 </div>
                 <div className="space-y-1 text-sm">
                     <label htmlFor="password" className="block text-black">Password</label>
-                    <input type="password" name="password" id="password" required placeholder="Password" className="w-full px-4 py-3 rounded-md border-gray-700 text-gray-100 focus:border-violet-400" />
+                    <input type="password" name="password" id="password" required placeholder="Password" className="w-full px-4 py-3 rounded-md border-gray-700 text-black focus:border-violet-400" />
                     <div className="flex justify-end text-xs text-blue-500">
                         <a rel="noopener noreferrer" href="#">Forgot Password?</a>
                     </div>
