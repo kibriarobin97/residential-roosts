@@ -1,8 +1,11 @@
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-import { useContext } from "react";
+import { useContext, useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
+
+    const [showPass, setShowPass] = useState(false)
 
     const { createUser, updateUserProfile } = useContext(AuthContext)
 
@@ -63,7 +66,16 @@ const Register = () => {
                 </div>
                 <div className="space-y-1 text-sm">
                     <label htmlFor="password" className="block text-black">Password</label>
-                    <input type="password" name="password" id="password" required placeholder="Password" className="w-full px-4 py-3 rounded-md border-gray-700 text-black focus:border-violet-400" />
+                    <div className="relative">
+                        <input
+                            type={showPass ? "text" : "password"}
+                            name="password" id="password" required placeholder="Password" className="w-full px-4 py-3 rounded-md border-gray-700 text-black focus:border-violet-400" />
+                        <span onClick={() => setShowPass(!showPass)} className="absolute top-3 right-2">
+                            {
+                                showPass ? <FaEyeSlash className="text-xl" /> : <FaEye className="text-xl" />
+                            }
+                        </span>
+                    </div>
                 </div>
                 <button className="block w-full p-3 text-center rounded-md font-bold bg-[#403F3F] text-white">Register</button>
             </form>

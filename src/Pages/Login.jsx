@@ -1,9 +1,12 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 
 const Login = () => {
+
+    const [showPass, setShowPass] = useState(false)
 
     const { loginUser, googleLogin, githubLogin, twitterLogin } = useContext(AuthContext)
 
@@ -75,7 +78,16 @@ const Login = () => {
                 </div>
                 <div className="space-y-1 text-sm">
                     <label htmlFor="password" className="block text-black">Password</label>
-                    <input type="password" name="password" id="password" required placeholder="Password" className="w-full px-4 py-3 rounded-md border-gray-700 text-black focus:border-violet-400" />
+                    <div className="relative">
+                        <input
+                            type={showPass ? "text" : "password"}
+                            name="password" id="password" required placeholder="Password" className="w-full px-4 py-3 rounded-md border-gray-700 text-black focus:border-violet-400" />
+                        <span onClick={() => setShowPass(!showPass)} className="absolute top-3 right-2">
+                            {
+                                showPass ? <FaEyeSlash className="text-xl" /> : <FaEye className="text-xl" />
+                            }
+                        </span>
+                    </div>
                     <div className="flex justify-end text-xs text-blue-500">
                         <a rel="noopener noreferrer" href="#">Forgot Password?</a>
                     </div>
