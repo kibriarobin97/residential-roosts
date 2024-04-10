@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useParams, useLoaderData, } from 'react-router-dom';
 
 const EstateDetails = () => {
@@ -10,7 +11,11 @@ const EstateDetails = () => {
     const { estate_title, segment_name, image, price, status, area, description, location, facilities, features } = estate;
 
     return (
-        <div className="p-5 mx-auto w-full sm:py-8 md:py-10 text-black">
+        
+        <div data-aos="flip-right" className="p-5 mx-auto w-full sm:py-8 md:py-10 text-black">
+            <Helmet>
+                <title>Estate Details {id}</title>
+            </Helmet>
             <div className="flex flex-col max-w-6xl mx-auto overflow-hidden rounded">
                 <img src={image} alt="" className="w-full bg-cover bg-center h-60 sm:h-96 bg-gray-500" />
                 <div className="p-6 pb-12 m-4 mx-auto -mt-16 space-y-6 lg:max-w-6xl sm:px-10 sm:mx-12 lg:rounded-md bg-gray-900 bg-opacity-50">

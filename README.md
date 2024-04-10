@@ -1,8 +1,16 @@
-# React + Vite
+## Website Name: Residential Roosts
+## Live Link: 
+## Features: 
+1. Responsible Navbar.
+2. Attractive slider for visitors.
+3. Lots of estate collection ready for sale or rent.
+4. Details of all estate
+5. User can see profile after login.
+6. They can edit their profile.
+7. Mobile and Tablet responsive.
+8. Allover visitor friendly website.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Npm Package
+* Animate.css
+* Swiper slider
+* AOS Package

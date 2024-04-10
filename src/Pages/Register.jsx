@@ -4,6 +4,7 @@ import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
 
@@ -51,6 +52,9 @@ const Register = () => {
 
     return (
         <div className="max-w-md mx-auto min-h-[calc(100vh-341px)] p-8 space-y-3 rounded-xl text-black">
+            <Helmet>
+                <title>Residential Roosts | Register</title>
+            </Helmet>
             <h1 className="text-2xl font-bold text-center">Register Now</h1>
             <p className="text-sm text-center text-gray-500">Register to create your account</p>
             <form onSubmit={handleRegister} className="space-y-6">

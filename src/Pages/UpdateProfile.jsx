@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet-async";
 
 const UpdateProfile = () => {
 
@@ -38,6 +39,9 @@ const UpdateProfile = () => {
     }
     return (
         <div className="max-w-md mx-auto min-h-[calc(100vh-341px)] p-8 space-y-3 rounded-xl text-black">
+            <Helmet>
+                <title>Update Profile</title>
+            </Helmet>
             <h1 className="text-2xl font-bold text-center">Update Profile</h1>
             <form onSubmit={handleUpdate} className="space-y-6">
                 <div className="space-y-1 text-sm">

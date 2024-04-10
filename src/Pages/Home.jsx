@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import EstateCard from "../components/EstateCard/EstateCard";
 import Slider from "../components/Slider/Slider";
 import { useLoaderData } from "react-router-dom";
@@ -8,6 +9,9 @@ const Home = () => {
 
     return (
         <div className="min-h-[calc(100vh-341px)]">
+            <Helmet>
+                <title>Residential Roosts | Home</title>
+            </Helmet>
             <Slider></Slider>
             <div className="my-10">
                 <h3 className="text-3xl font-bold text-center">Best Deals</h3>

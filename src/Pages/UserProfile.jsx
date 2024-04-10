@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import defaultPhoto from "../assets/user.png"
+import { Helmet } from "react-helmet-async";
 
 const UserProfile = () => {
 
@@ -12,6 +13,9 @@ const UserProfile = () => {
 
     return (
         <div className="flex flex-col justify-center max-w-md w-full mx-auto my-5 p-6 shadow-md rounded-xl sm:px-12  text-black">
+            <Helmet>
+                <title>User Profile</title>
+            </Helmet>
             <img src={photoURL || defaultPhoto} alt="" className="w-32 h-32 mx-auto rounded-full bg-gray-500 aspect-square" />
             <div className="space-y-4 text-center divide-y divide-gray-700">
                 <div className="my-2 space-y-1">

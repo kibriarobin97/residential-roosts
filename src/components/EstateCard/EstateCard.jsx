@@ -6,7 +6,7 @@ const EstateCard = ({ estate }) => {
     const { id, estate_title, segment_name, image, price, status, area } = estate;
 
     return (
-        <div className="flex flex-col flex-grow shadow-lg max-w-lg p-6 space-y-6 overflow-hidden rounded-lg text-black">
+        <div data-aos="zoom-in-up" className="flex flex-col flex-grow shadow-lg max-w-lg p-6 space-y-6 overflow-hidden rounded-lg text-black">
             <div>
                 <img src={image} alt="" className="object-cover w-full rounded-md mb-4 h-60 sm:h-96 bg-gray-500" />
                 <p className="text-[#8C8C8C]">{segment_name}</p>

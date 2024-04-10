@@ -4,6 +4,7 @@ import { AuthContext } from "../AuthProvider/AuthProvider";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet-async";
 
 
 const Login = () => {
@@ -71,6 +72,9 @@ const Login = () => {
 
     return (
         <div className="w-full max-w-md mx-auto min-h-[calc(100vh-341px)] p-8 space-y-3 rounded-xl text-black">
+            <Helmet>
+                <title>Residential Roosts | Login</title>
+            </Helmet>
             <h1 className="text-2xl font-bold text-center">Please Login</h1>
             <p className="text-sm text-center text-gray-500">Login to access your account</p>
             <form onSubmit={handleLogin} className="space-y-6">
