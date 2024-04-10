@@ -17,7 +17,7 @@ const UserProfile = () => {
                     <h2 className="text-xl font-semibold sm:text-2xl">User Name: <span className="font-medium text-gray-500 text-xl">
                     {displayName}    
                     </span></h2>
-                    <p className="text-xl font-semibold sm:text-2xl">User Email: <span className="font-medium text-gray-500 text-xl">{email}</span></p>
+                    <p className="text-xl font-semibold sm:text-2xl">User Email: <span className="font-medium text-gray-500 text-xl">{email || 'not available'}</span></p>
                 </div>
             </div>
         </div>
