@@ -2,6 +2,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
 
@@ -22,12 +24,12 @@ const Register = () => {
         const passReg = /^(?=.*[a-z])(?=.*[A-Z]).+$/;
 
         if (password.length < 6) {
-            alert('password should be at least 6 characters or longer')
+            toast.warn("password should be at least 6 characters or longer", { position: "top-center" })
             return;
         }
 
         if (!passReg.test(password)) {
-            alert('password must be an Uppercase and a Lowercase')
+            toast.warn("password must be an Uppercase and a Lowercase", { position: "top-center" })
             return;
         }
 
@@ -36,13 +38,13 @@ const Register = () => {
             .then(() => {
                 updateUserProfile(name, photo)
                     .then(() => {
-                        alert('Successfully created account')
+                        toast.success("Successfully created account", { position: "top-center" })
                         navigate('/')
                     })
 
             })
             .catch(error => {
-                console.error(error)
+                toast.error(error.message, { position: "top-center" })
             })
 
     }

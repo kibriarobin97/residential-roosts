@@ -2,6 +2,8 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
@@ -22,13 +24,13 @@ const Login = () => {
         //login user
         loginUser(email, password)
             .then(() => {
-                alert('Successfully Login')
+                toast.success("Successfully Login", { position: "top-center" })
 
                 //navigate use after login
                 navigate(location?.state ? location.state : '/')
             })
             .catch(() => {
-                alert('Incorect Email and Password')
+                toast.error("Incorect Email and Password", { position: "top-center" })
             })
     }
 
@@ -36,22 +38,22 @@ const Login = () => {
     const handleGoogle = () => {
         googleLogin()
             .then(() => {
-                alert('Successfully Login With Google')
+                toast.success("Successfully Login With Google", { position: "top-center" })
                 navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
-                alert(error.message);
+                toast.error(error.message, { position: "top-center" });
             })
     }
     // login with github
     const handleGithub = () => {
         githubLogin()
             .then(() => {
-                alert('Successfully Login With Github')
+                toast.success("Successfully Login With Github", { position: "top-center" })
                 navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
-                alert(error.message);
+                toast.error(error.message, { position: "top-center" });
             })
     }
 
@@ -59,11 +61,11 @@ const Login = () => {
     const handleTwitter = () => {
         twitterLogin()
             .then(() => {
-                alert('Successfully Login With Twitter')
+                toast.success("Successfully Login With Twitter", { position: "top-center" })
                 navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
-                alert(error.message);
+                toast.error(error.message, { position: "top-center" });
             })
     }
 

@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import defaultPhoto from "../../assets/user.png"
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Navbar = () => {
@@ -11,9 +13,11 @@ const Navbar = () => {
 
     const handleLogOut = () => {
         logOut()
-            .then(alert('Successfully Logout'))
+            .then(() => {
+                toast.success("Successfully Logout", { position: "top-center" })
+            })
             .catch(error => {
-                alert(error.message)
+                toast.error(error.message, { position: "top-center" })
             })
     }
 

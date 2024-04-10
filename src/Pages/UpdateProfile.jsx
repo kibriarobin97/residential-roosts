@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const UpdateProfile = () => {
 
@@ -18,20 +20,20 @@ const UpdateProfile = () => {
         //create user
         updateUserProfile(name, photo)
             .then(() => {
-                alert('Successfully Updated')
+                toast.success("Successfully Updated", { position: "top-center" })
                 navigate('/')
             })
             .catch(error => {
-                console.error(error)
+                toast.error(error.message, { position: "top-center" })
             })
 
         updatesEmail(email)
             .then(() => {
-                alert('Successfully Updated')
+                toast.success("Successfully Updated", { position: "top-center" })
                 navigate('/')
             })
             .catch(error => {
-                console.error(error)
+                toast.error(error.message, { position: "top-center" })
             })
     }
     return (
