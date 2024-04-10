@@ -32,7 +32,7 @@ const Slider = () => {
             >
                 <SwiperSlide className='relative'>
                     <img className='object-cover max-h-96 w-full' src="https://i.ibb.co/jD9Yt9n/single-family.jpg" alt="" />
-                    <div className='absolute bottom-6 md:bottom-10 w-1/2 bg-black ml-20 p-3 bg-opacity-60 rounded-md animate__animated animate__fadeInDownBig'>
+                    <div className='absolute bottom-6 md:bottom-10 w-1/2 bg-black ml-20 p-3 bg-opacity-60 rounded-md animate__animated animate__fadeInRight'>
                         <div className="subtitle" data-swiper-parallax="-200">
                             <h3 className='text-white font-bold text-2xl'>Single-family homes</h3>
                         </div>
@@ -45,7 +45,7 @@ const Slider = () => {
                 </SwiperSlide>
                 <SwiperSlide className='relative'>
                     <img className='object-cover max-h-96 w-full' src="https://i.ibb.co/xY1DZBF/apartments2.jpg" alt="" />
-                    <div className='absolute bottom-6 md:bottom-10 w-1/2 bg-black ml-20 p-3 bg-opacity-60 rounded-md animate__animated animate__jackInTheBox'>
+                    <div className='absolute bottom-6 md:bottom-10 w-1/2 bg-black ml-20 p-3 bg-opacity-60 rounded-md animate__animated animate__fadeInRight'>
                         <div className="subtitle" data-swiper-parallax="-200">
                             <h3 className='text-white font-bold text-2xl'>Apartments</h3>
                         </div>
@@ -58,7 +58,7 @@ const Slider = () => {
                 </SwiperSlide>
                 <SwiperSlide className='relative'>
                     <img className='object-cover max-h-96 w-full' src="https://i.ibb.co/8cCKtJz/townhouses2.jpg" alt="" />
-                    <div className='absolute bottom-6 md:bottom-10 w-1/2 bg-black ml-20 p-3 bg-opacity-60 rounded-md animate__animated animate__fadeInTopLeft'>
+                    <div className='absolute bottom-6 md:bottom-10 w-1/2 bg-black ml-20 p-3 bg-opacity-60 rounded-md animate__animated animate__fadeInRight'>
                         <div className="subtitle" data-swiper-parallax="-200">
                             <h3 className='text-white font-bold text-2xl'>Townhouses</h3>
                         </div>
