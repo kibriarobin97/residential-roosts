@@ -24,8 +24,8 @@ const Login = () => {
                 //navigate use after login
                 navigate(location?.state ? location.state : '/')
             })
-            .catch(error => {
-                alert(error.message)
+            .catch(() => {
+                alert('Incorect Email and Password')
             })
     }
 
